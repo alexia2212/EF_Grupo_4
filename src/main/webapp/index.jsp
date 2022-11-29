@@ -33,7 +33,7 @@
         .cancelbtn {
             width: auto;
             padding: 10px 18px;
-            background-color: #ff2244;
+            background-color: #f44336;
         }
 
         .imgcontainer {
@@ -73,7 +73,7 @@
 <form action="/action_page.php" method="post">
 
     <div class="container">
-        <label for="uname"><b>Usuario</b></label>
+        <label for="uname"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required>
 
         <label for="psw"><b>Password</b></label>
@@ -85,6 +85,9 @@
         </label>
     </div>
 
+    <div class="container" style="background-color:#71858f">
+        <button type="">Registrate Ahora</button>
+    </div>
 </form>
 
 </body>
