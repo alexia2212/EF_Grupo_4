@@ -17,7 +17,7 @@
         }
 
         button {
-            background-color: #034;
+            background-color: #04AA6D;
             color: white;
             padding: 14px 20px;
             margin: 8px 0;
@@ -69,25 +69,29 @@
 </head>
 <body>
 
+<h2>Inicio de Sesión</h2>
 
-<form action="/action_page.php" method="post">
+<form method="post" action="<%=request.getContextPath()%>/SessionServlet">
+    <div class="imgcontainer">
+        <img src="imagenes/img_avatar.png" alt="Avatar" class="avatar">
+    </div>
 
     <div class="container">
-        <label for="uname"><b>Username</b></label>
+        <label for="uname"><b>Correo</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required>
 
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
 
-        <button type="submit">Login</button>
-        <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
     </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
+    <% if (request.getAttribute("err") != null) { %>
+    <div class="text-danger mt-2">
+        <%=request.getAttribute("err")%>
+    </div>
+    <%} %>
 
-    <div class="container" style="background-color:#71858f">
-        <button type="">Registrate Ahora</button>
-    </div>
+
 </form>
 
 </body>

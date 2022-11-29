@@ -23,7 +23,6 @@ public class FilterLogin implements Filter {
         HttpServletResponse response=(HttpServletResponse) resp;
 
         UsuarioBean usurioLogueado = (UsuarioBean) request.getSession().getAttribute("usuarioLogueado");
-        //Empleado empleadoLoqueado = (Empleado) request.getSession().getAttribute("empleadoLogueado");
 
         if (usurioLogueado==null) {
             response.sendRedirect(request.getContextPath());

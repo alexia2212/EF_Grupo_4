@@ -1,11 +1,20 @@
 package com.example.examenfinal.Beans;
 
 public class UsuarioBean {
+    private int idUsuario;
     private String nombre;
     private String apellido;
     private String correo;
     private String contrasena;
     private String tipo;
+
+    public int getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(int idUsuario) {
+        this.idUsuario = idUsuario;
+    }
 
     public String getNombre() {
         return nombre;
