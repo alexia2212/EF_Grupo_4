@@ -3,31 +3,58 @@ package com.example.examenfinal.Beans;
 import java.sql.Timestamp;
 
 public class ServicioBean {
-    private String tipo;
-    private java.sql.Timestamp fechaRegistro;
-    private double costo;
+    private int idServicio;
+    private float costo;
+    private float tiempoDeRealizacion;
+    private UsuarioBean idUsuario;
+    private TipoServicio idTipoServicio;
+    private TipoUsuario idTipoUsuario;
 
-    public String getTipo() {
-        return tipo;
+    public int getIdServicio() {
+        return idServicio;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setIdServicio(int idServicio) {
+        this.idServicio = idServicio;
     }
 
-    public Timestamp getFechaRegistro() {
-        return fechaRegistro;
-    }
-
-    public void setFechaRegistro(Timestamp fechaRegistro) {
-        this.fechaRegistro = fechaRegistro;
-    }
-
-    public double getCosto() {
+    public float getCosto() {
         return costo;
     }
 
-    public void setCosto(double costo) {
+    public void setCosto(float costo) {
         this.costo = costo;
+    }
+
+    public float getTiempoDeRealizacion() {
+        return tiempoDeRealizacion;
+    }
+
+    public void setTiempoDeRealizacion(float tiempoDeRealizacion) {
+        this.tiempoDeRealizacion = tiempoDeRealizacion;
+    }
+
+    public UsuarioBean getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(UsuarioBean idUsuario) {
+        this.idUsuario = idUsuario;
+    }
+
+    public TipoServicio getIdTipoServicio() {
+        return idTipoServicio;
+    }
+
+    public void setIdTipoServicio(TipoServicio idTipoServicio) {
+        this.idTipoServicio = idTipoServicio;
+    }
+
+    public TipoUsuario getIdTipoUsuario() {
+        return idTipoUsuario;
+    }
+
+    public void setIdTipoUsuario(TipoUsuario idTipoUsuario) {
+        this.idTipoUsuario = idTipoUsuario;
     }
 }
