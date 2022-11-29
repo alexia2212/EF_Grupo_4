@@ -17,7 +17,7 @@
         }
 
         button {
-            background-color: #04AA6D;
+            background-color: #034;
             color: white;
             padding: 14px 20px;
             margin: 8px 0;
@@ -90,7 +90,6 @@
         <%=request.getAttribute("err")%>
     </div>
     <%} %>
-
 
 </form>
 
